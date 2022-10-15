@@ -23,6 +23,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Food from './pages/Food';
+import MenuFood from './pages/MenuFood';
+import Exercise from './pages/Exercise';
+import Statistic from './pages/Statistic';
 const Stack = createNativeStackNavigator();
 
 const App= () => {
@@ -33,6 +36,9 @@ const App= () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Food" component={Food} />
+        <Stack.Screen name="MenuFood" component={MenuFood} />
+        <Stack.Screen name="Exercise" component={Exercise} />
+        <Stack.Screen name="Statistic" component={Statistic} />
       </Stack.Navigator>
     </NavigationContainer>
   );

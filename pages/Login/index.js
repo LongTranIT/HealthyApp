@@ -37,6 +37,7 @@ export default Login = ({navigation}) => {
         AsyncStorage.setItem('can_nang', user.can_nang.toString());
         AsyncStorage.setItem('chieu_cao', user.chieu_cao.toString());
         AsyncStorage.setItem('calo_muc_tieu', user.calo_muc_tieu.toString());
+        AsyncStorage.setItem('can_nang_muc_tieu', user.can_nang_muc_tieu.toString());
 				alert("Đăng nhập thành công")
         navigation.replace('Home')
 			}
