@@ -1,7 +1,7 @@
 import axios from "axios"
 class AccountService{
 	login=async(username, password)=>{
-		const result= await axios.post(`https://healthy--api.herokuapp.com/login`,{username, password})
+		const result= await axios.post(`http://10.0.2.2:3000/login`,{username, password})
 		return result.data
 	}
 	signUp=async(accountData)=>{

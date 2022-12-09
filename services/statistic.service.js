@@ -1,7 +1,7 @@
 import axios from "axios"
 class StatisticService{
 	getAll=async()=>{
-		const result= await axios.get(`https://healthy--api.herokuapp.com/thongke/`)
+		const result= await axios.get(`http://10.0.2.2:3000/thongke/`)
 		return result.data
 	}
 	getByDate=async(data)=>{
@@ -21,7 +21,7 @@ class StatisticService{
 		return result.data
 	}
 	getByRange=async(data)=>{
-		const result= await axios.get(`https://healthy--api.herokuapp.com/thongke/`,{
+		const result= await axios.get(`http://10.0.2.2:3000/thongke/`,{
 			params:data
 		})
 		return result.data

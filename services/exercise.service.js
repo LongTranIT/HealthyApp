@@ -1,7 +1,7 @@
 import axios from "axios"
 class ExerciseService{
 	getAll=async()=>{
-		const result= await axios.get(`https://healthy--api.herokuapp.com/baitap`)
+		const result= await axios.get(`http://10.0.2.2:3000/baitap`)
 		return result.data
 	}
 	getById=async(id)=>{

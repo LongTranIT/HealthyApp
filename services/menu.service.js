@@ -1,7 +1,7 @@
 import axios from "axios"
 class MenuService{
 	getAll=async()=>{
-		const result= await axios.get(`https://healthy--api.herokuapp.com/thucdon`)
+		const result= await axios.get(`http://10.0.2.2:3000/thucdon`)
 		return result.data
 	}
 	getById=async(id)=>{

@@ -135,7 +135,7 @@ const Statistic = ({navigation}) => {
   };
 
   return (
-    <View>
+    <ScrollView>
       <View
         style={{
           backgroundColor: '#aac1eea1',
@@ -198,7 +198,7 @@ const Statistic = ({navigation}) => {
           yAxisSuffix="Kg"
         />
       </View>
-    </View>
+      </ScrollView>
   );
 };
 
